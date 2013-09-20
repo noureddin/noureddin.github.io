@@ -4,11 +4,11 @@
     "description": "Arabic English Scientific Dictionary.",
     "launch_path": "/aesd.webapp/index.html",
     "icons": {
-        "128": "/aesd.webapp/aesd.png"
+        "60": "/aesd.webapp/aesd-60.png"
+        "128": "/aesd.webapp/aesd-128.png"
     },
     "developer": {
         "name": "NoUrEdDiN",
-        "url": "mailto:noureddin95@gmail.com"
     },
     "installs_allowed_from": ["*"],
     "locales": {
@@ -18,6 +18,8 @@
                 "name": "نور الدين"
             }
     },
-    "default_locale": "en"
+    locale: {
+	    "default_locale": "en"
+	    }
     }
 }
