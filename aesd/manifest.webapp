@@ -1,0 +1,23 @@
+{
+    "version": "0.1",
+    "name": "AESD",
+    "description": "Arabic English Scientific Dictionary.",
+    "launch_path": "/index.html",
+    "icons": {
+        "128": "/aesd.png"
+    },
+    "developer": {
+        "name": "NoUrEdDiN",
+        "url": "mailto:noureddin95@gmail.com"
+    },
+    "installs_allowed_from": ["*"],
+    "locales": {
+        "ar": {
+            "description": "معجم المصطلحات العلمية والتقنية للغتين العربية والاتجليزية.",
+            "developer": {
+                "name": "نور الدين"
+            }
+    },
+    "default_locale": "en"
+    }
+}
