@@ -2,9 +2,9 @@
     "version": "0.1",
     "name": "AESD",
     "description": "Arabic English Scientific Dictionary.",
-    "launch_path": "/aesd/index.html",
+    "launch_path": "/aesd.webapp/index.html",
     "icons": {
-        "128": "/aesd/aesd.png"
+        "128": "/aesd.webapp/aesd.png"
     },
     "developer": {
         "name": "NoUrEdDiN",
