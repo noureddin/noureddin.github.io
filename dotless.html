@@ -1,0 +1,29 @@
+<meta charset="utf-8"/>
+<script>
+    function dotlessize() {
+        h = document.getElementById('h')
+        t = document.getElementById('t').value
+        t = t.replace(/([\u064B-\u0655])/g, '')  // remove tashkeel
+        t = t.replace(/ب|ت|ث/g, 'ٮ')
+        t = t.replace(/أ|إ|آ/g, 'ا')
+        t = t.replace(/ي|ئ/g, 'ى')
+        t = t.replace(/ج|خ/g, 'ح')
+        t = t.replace(/ذ/g, 'د')
+        t = t.replace(/ز/g, 'ر')
+        t = t.replace(/ش/g, 'س')
+        t = t.replace(/ض/g, 'ص')
+        t = t.replace(/ظ/g, 'ط')
+        t = t.replace(/غ/g, 'ع')
+        t = t.replace(/ف/g, '\u06A1')
+        t = t.replace(/ق/g, '\u066F')
+        t = t.replace(/ك/g, '\u06A9')
+        t = t.replace(/ن/g, '\u06BA')
+        t = t.replace(/ة/g, 'ه')
+        t = t.replace(/ؤ/g, 'و')
+        h.innerHTML = t
+    }
+</script>
+<body dir="rtl">
+<input id="t" onchange="dotlessize()" type="text" />
+<h3 id="h"></h3>
+</body>
