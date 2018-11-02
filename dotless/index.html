@@ -4,7 +4,7 @@
         h = document.getElementById('h')
         t = document.getElementById('t').value
         t = t.replace(/([\u064B-\u0655])/g, '')  // remove tashkeel
-        t = t.replace(/(ي|ن)(أ|ا|إ|آ|ب|ت|ث|ج|ح|خ|د|ذ|ر|ز|س|ش|ص|ض|ط|ظ|ع|غ|ف|ق|ك|ل|م|ن|ه|و|ي|ى|ة)/g, 'ٮ$2')
+        t = t.replace(/(ي|ن)(?=أ|ا|إ|آ|ب|ت|ث|ج|ح|خ|د|ذ|ر|ز|س|ش|ص|ض|ط|ظ|ع|غ|ف|ق|ك|ل|م|ن|ه|و|ي|ى|ة)/g, 'ٮ')
         t = t.replace(/ب|ت|ث/g, 'ٮ')
         t = t.replace(/أ|إ|آ/g, 'ا')
         t = t.replace(/ي|ئ/g, 'ى')
