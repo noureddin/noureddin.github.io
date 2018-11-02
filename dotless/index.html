@@ -21,10 +21,23 @@
         t = t.replace(/ن/g, '\u06BA')
         t = t.replace(/ة/g, 'ه')
         t = t.replace(/ؤ/g, 'و')
+        // a small touch ;)
+        t = t.replace(/i/g, 'ı')
+        t = t.replace(/j/g, 'ȷ')
         h.innerHTML = t
+    }
+    function copy() {  // https://stackoverflow.com/a/34192073
+        window.getSelection().removeAllRanges()
+        container = document.getElementById('h')
+        var range = document.createRange()
+        range.selectNode(container)
+        window.getSelection().addRange(range)
+        document.execCommand('copy')
     }
 </script>
 <body dir="rtl">
 <input id="t" onchange="dotlessize()" type="text" />
+<button onclick="copy()">نسخ - Copy</button>
 <h3 id="h"></h3>
+<p>اکٮٮ ڡى هدا المسٮطٮل ٮاللعه العرٮٮه، وعٮدما ٮٮرکه او ٮصعط رر Enter سٮطهر لک الٮص الدى کٮٮه مں عٮر ٮٯاط. وٮسٮطٮع الصعط على رر «ٮسح» حٮى ٮٮسح الٮص عٮر المٮٯوط الٮاٮح.</p>
 </body>
