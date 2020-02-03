@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>getNextPcapFileFromPlaylist/2</title>
+    <style>
+      svg {
+        position: relative;
+        top: 0.212999999999999cm;
+      }
+      a { outline: none; }
+      a:hover  :not(text) { fill: rgb(204, 204, 255); }
+      a:active :not(text) { fill: rgb(150, 150, 255); }
+    </style>
+  </head>
+  <body>
+    <div align="center">
+
+<svg width="30.154cm" height="19.464cm" viewBox="2.819 -48.748 45.231 29.196"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Layer: Background -->
+<g id="Background">
+<!-- Standard - Text -->
+<text x="16.337" y="-38.075"  fill="#000000" text-anchor="start" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="29.250" y="-38.075"  fill="#000000" text-anchor="start" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Flowchart - Terminal -->
+<path stroke="#FFFFFF" fill="#FFFFFF" stroke-width="0.100"  d="M 4.109,-25.695 L 8.872,-25.695 C 9.529,-25.695 10.062,-25.359 10.062,-24.945 C 10.062,-24.531 9.529,-24.195 8.872,-24.195 L 4.109,-24.195 C 3.452,-24.195 2.919,-24.531 2.919,-24.945 C 2.919,-25.359 3.452,-25.695 4.109,-25.695 z"/>
+<!-- Flowchart - Box -->
+<rect x="12.346" y="-42.935" width="21.844" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="23.267" y="-41.665"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+fgets(filename, filename_len, playlist_fp[thread_id])</text>
+<!-- Flowchart - Off Page Connector -->
+<a xlink:href="getNextPcapFileFromPlaylist.html">
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 16.671,-48.648 L 29.864,-48.648 L 29.864,-45.346 L 23.267,-44.521 L 16.671,-45.346 L 16.671,-48.648 z"/>
+<text x="23.267" y="-46.677"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+getNextPcapFileFromPlaylist/1</text>
+</a>
+<!-- Flowchart - Box -->
+<rect x="3.847" y="-34.300" width="13.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="10.347" y="-33.030"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+fclose(playlist_fp[thread_id])</text>
+<!-- Flowchart - Box -->
+<rect x="3.847" y="-31.325" width="13.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="10.347" y="-30.055"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+playlist_fp[thread_id] = NULL</text>
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 7.966,-28.300 L 12.728,-28.300 C 13.385,-28.300 13.918,-27.964 13.918,-27.550 C 13.918,-27.136 13.385,-26.800 12.728,-26.800 L 7.966,-26.800 C 7.308,-26.800 6.775,-27.136 6.775,-27.550 C 6.775,-27.964 7.308,-28.300 7.966,-28.300 z"/>
+<text x="10.347" y="-27.230"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Return -1</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="38.036,-36.450 43.900,-33.950 38.036,-31.450 32.173,-33.950 "/>
+<text x="38.036" y="-34.430"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Does</text>
+<text x="38.036" y="-33.630"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+filename start with</text>
+<text x="38.036" y="-32.830"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+&apos;\0&apos; or &apos;#&apos;?</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="23.267,-40.150 29.267,-37.650 23.267,-35.150 17.267,-37.650 "/>
+<text x="23.267" y="-38.130"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Were</text>
+<text x="23.267" y="-37.330"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+a filename</text>
+<text x="23.267" y="-36.530"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+read?</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="38.036,-30.501 43.900,-28.001 38.036,-25.501 32.173,-28.001 "/>
+<text x="38.036" y="-28.081"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Does filename</text>
+<text x="38.036" y="-27.281"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+end with &apos;\n&apos;?</text>
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 35.655,-21.152 L 40.417,-21.152 C 41.075,-21.152 41.608,-20.816 41.608,-20.402 C 41.608,-19.988 41.075,-19.652 40.417,-19.652 L 35.655,-19.652 C 34.998,-19.652 34.465,-19.988 34.465,-20.402 C 34.465,-20.816 34.998,-21.152 35.655,-21.152 z"/>
+<text x="38.036" y="-20.082"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Return 0</text>
+<!-- Flowchart - Box -->
+<rect x="30.554" y="-24.551" width="14.965" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="38.036" y="-23.281"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Set the last char of filename to &apos;\0&apos;</text>
+<!-- Standard - Line -->
+<line x1="10.347" y1="-29.425" x2="10.347" y2="-28.787" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="10.347,-28.412 10.097,-28.912 10.347,-28.787 10.597,-28.912 "/>
+<!-- Standard - Line -->
+<line x1="10.347" y1="-32.351" x2="10.347" y2="-31.812" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="10.347,-31.437 10.097,-31.937 10.347,-31.812 10.597,-31.937 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="17.267,-37.650 10.347,-37.650 10.347,-34.787 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="10.347,-34.412 10.097,-34.912 10.347,-34.787 10.597,-34.912 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="29.267,-37.650 38.036,-37.650 38.036,-36.937 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="38.036,-36.562 37.786,-37.062 38.036,-36.937 38.286,-37.062 "/>
+<!-- Standard - Line -->
+<line x1="23.267" y1="-44.521" x2="23.267" y2="-43.422" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.267,-43.047 23.017,-43.547 23.267,-43.422 23.517,-43.547 "/>
+<!-- Standard - Line -->
+<line x1="23.267" y1="-40.985" x2="23.267" y2="-40.637" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.267,-40.262 23.017,-40.762 23.267,-40.637 23.517,-40.762 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="43.900,-33.950 47.738,-33.950 47.738,-43.728 23.754,-43.728 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.379,-43.728 23.879,-43.978 23.754,-43.728 23.879,-43.478 "/>
+<!-- Standard - Line -->
+<line x1="38.036" y1="-31.402" x2="38.036" y2="-30.987" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="38.036,-30.612 37.786,-31.112 38.036,-30.987 38.286,-31.112 "/>
+<!-- Standard - Line -->
+<line x1="38.036" y1="-25.501" x2="38.036" y2="-25.038" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="38.036,-24.663 37.786,-25.163 38.036,-25.038 38.286,-25.163 "/>
+<!-- Standard - Line -->
+<line x1="38.036" y1="-22.651" x2="38.036" y2="-21.639" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="38.036,-21.264 37.786,-21.764 38.036,-21.639 38.286,-21.764 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="43.900,-28.001 48.000,-28.001 48.000,-21.902 38.523,-21.902 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="38.148,-21.902 38.648,-22.152 38.523,-21.902 38.648,-21.652 "/>
+<!-- Standard - Text -->
+<text x="38.712" y="-25.100"  fill="#000000" text-anchor="start" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="43.700" y="-34.343"  fill="#000000" text-anchor="start" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="38.735" y="-30.968"  fill="#000000" text-anchor="start" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="43.722" y="-28.460"  fill="#000000" text-anchor="start" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+</g>
+</svg>
+
+    </div>
+  </body>
+</html>
