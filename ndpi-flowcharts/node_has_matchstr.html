@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>node_has_matchstr</title>
+    <style>
+      @font-face {
+        /* https://www.amirifont.org/ */
+        font-family: Amiri;
+        font-style: normal;
+        font-weight: 400;
+        src: url('Amiri-Regular.woff2') format('woff2'),
+             url('Amiri-Regular.woff') format('woff');
+      }
+      svg {
+        position: relative;
+        top: 0.358666666666666cm;
+      }
+      a { outline: none; }
+      a:hover  :not(text) { fill: rgb(204, 204, 255); }
+      a:active :not(text) { fill: rgb(150, 150, 255); }
+    </style>
+  </head>
+  <body>
+    <div align="center">
+
+<svg width="28.8053333333333cm" height="19.1726666666667cm" viewBox="1.402 -12.005 43.208 28.759"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Layer: Background -->
+<g id="Background">
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 20.230,-11.905 L 26.527,-11.905 C 27.396,-11.905 28.101,-11.570 28.101,-11.155 C 28.101,-10.741 27.396,-10.405 26.527,-10.405 L 20.230,-10.405 C 19.361,-10.405 18.656,-10.741 18.656,-11.155 C 18.656,-11.570 19.361,-11.905 20.230,-11.905 z"/>
+<text x="23.379" y="-10.835"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+node_has_matchstr</text>
+<!-- Flowchart - Box -->
+<rect x="19.378" y="-9.169" width="8.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="23.378" y="-7.899"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Set i to 0</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="23.378,-6.082 30.062,-4.582 23.378,-3.082 16.695,-4.582 "/>
+<text x="23.378" y="-5.062"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Is</text>
+<text x="23.378" y="-4.262"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+i &lt; its matched_patterns_num</text>
+<text x="23.378" y="-3.462"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+?</text>
+<!-- Flowchart - Box -->
+<rect x="14.379" y="-1.895" width="18.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="23.379" y="-0.625"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Set str to &amp;thiz-&gt;matched_patterns[i]</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="23.378,1.192 30.062,2.692 23.378,4.192 16.695,2.692 "/>
+<text x="23.378" y="2.212"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Is</text>
+<text x="23.378" y="3.012"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+str-&gt;length == newstr-&gt;length</text>
+<text x="23.378" y="3.812"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+?</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="23.378,8.466 27.218,9.966 23.378,11.466 19.539,9.966 "/>
+<text x="23.378" y="9.486"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Is</text>
+<text x="23.378" y="10.286"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+j &lt; str-&gt;length</text>
+<text x="23.378" y="11.086"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+?</text>
+<!-- Flowchart - Box -->
+<rect x="19.378" y="5.379" width="8.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="23.378" y="6.649"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Set j = 0</text>
+<!-- Flowchart - Box -->
+<rect x="11.236" y="9.016" width="6.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="14.236" y="10.286"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Increment j</text>
+<!-- Flowchart - Box -->
+<rect x="6.434" y="-5.532" width="6.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="9.434" y="-4.262"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Increment i</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="23.378,12.653 32.757,14.153 23.378,15.653 14.000,14.153 "/>
+<text x="23.378" y="13.673"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Is</text>
+<text x="23.378" y="14.473"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+str-&gt;astring[j] != newstr-&gt;astring[j]</text>
+<text x="23.378" y="15.273"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+?</text>
+<!-- Standard - Line -->
+<line x1="23.378" y1="-10.405" x2="23.378" y2="-9.655" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.378,-9.280 23.128,-9.780 23.378,-9.655 23.628,-9.780 "/>
+<!-- Standard - Line -->
+<line x1="23.378" y1="-7.269" x2="23.378" y2="-6.568" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.378,-6.193 23.128,-6.693 23.378,-6.568 23.628,-6.693 "/>
+<!-- Standard - Line -->
+<line x1="23.378" y1="-3.082" x2="23.378" y2="-2.381" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.378,-2.006 23.128,-2.506 23.378,-2.381 23.628,-2.506 "/>
+<!-- Standard - Line -->
+<line x1="23.379" y1="0.056" x2="23.378" y2="0.706" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.378,1.081 23.128,0.581 23.378,0.706 23.628,0.581 "/>
+<!-- Standard - Line -->
+<line x1="23.378" y1="7.329" x2="23.378" y2="7.979" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.378,8.354 23.128,7.854 23.378,7.979 23.628,7.854 "/>
+<!-- Standard - Line -->
+<line x1="23.378" y1="11.466" x2="23.378" y2="12.166" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.378,12.541 23.128,12.041 23.378,12.166 23.628,12.041 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="23.378,15.653 23.378,16.703 5.384,16.703 5.384,-4.582 5.947,-4.582 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="6.322,-4.582 5.822,-4.332 5.947,-4.582 5.822,-4.832 "/>
+<!-- Standard - Line -->
+<line x1="12.434" y1="-4.582" x2="16.208" y2="-4.582" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="16.583,-4.582 16.083,-4.332 16.208,-4.582 16.083,-4.832 "/>
+<!-- Standard - Line -->
+<line x1="17.236" y1="9.966" x2="19.052" y2="9.966" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="19.427,9.966 18.927,10.216 19.052,9.966 18.927,9.716 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="14.000,14.153 8.673,14.153 8.673,9.966 10.749,9.966 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="11.124,9.966 10.624,10.216 10.749,9.966 10.624,9.716 "/>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="35.778,8.466 39.618,9.966 35.778,11.466 31.938,9.966 "/>
+<text x="35.778" y="9.486"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Is</text>
+<text x="35.778" y="10.286"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+j == str-&gt;length</text>
+<text x="35.778" y="11.086"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+?</text>
+<!-- Standard - Line -->
+<line x1="23.378" y1="4.192" x2="23.378" y2="4.893" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.378,5.268 23.128,4.768 23.378,4.893 23.628,4.768 "/>
+<!-- Standard - Line -->
+<line x1="27.218" y1="9.966" x2="31.451" y2="9.966" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="31.826,9.966 31.326,10.216 31.451,9.966 31.326,9.716 "/>
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 38.557,11.684 L 43.320,11.684 C 43.977,11.684 44.510,12.020 44.510,12.434 C 44.510,12.848 43.977,13.184 43.320,13.184 L 38.557,13.184 C 37.900,13.184 37.367,12.848 37.367,12.434 C 37.367,12.020 37.900,11.684 38.557,11.684 z"/>
+<text x="40.939" y="12.754"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Return 1</text>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="35.778,11.466 35.778,16.703 14.381,16.703 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="39.618,9.966 40.939,9.966 40.939,11.197 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="40.939,11.572 40.689,11.072 40.939,11.197 41.189,11.072 "/>
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 38.557,-1.695 L 43.320,-1.695 C 43.977,-1.695 44.510,-1.359 44.510,-0.945 C 44.510,-0.530 43.977,-0.195 43.320,-0.195 L 38.557,-0.195 C 37.900,-0.195 37.367,-0.530 37.367,-0.945 C 37.367,-1.359 37.900,-1.695 38.557,-1.695 z"/>
+<text x="40.939" y="-0.625"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Return 0</text>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="30.062,-4.582 40.939,-4.582 40.939,-2.181 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="40.939,-1.806 40.689,-2.306 40.939,-2.181 41.189,-2.306 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="16.695,2.692 5.384,2.692 5.384,6.061 "/>
+<!-- Flowchart - Terminal -->
+<path stroke="#FFFFFF" fill="#FFFFFF" stroke-width="0.100"  d="M 2.692,-7.862 L 7.454,-7.862 C 8.112,-7.862 8.645,-7.526 8.645,-7.112 C 8.645,-6.698 8.112,-6.362 7.454,-6.362 L 2.692,-6.362 C 2.035,-6.362 1.502,-6.698 1.502,-7.112 C 1.502,-7.526 2.035,-7.862 2.692,-7.862 z"/>
+<!-- Standard - Text -->
+<text x="23.786" y="-2.442"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="16.127" y="2.299"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="27.092" y="9.620"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="23.786" y="4.890"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="23.786" y="12.006"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="39.416" y="9.599"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="34.753" y="12.025"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="29.797" y="-5.000"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="23.786" y="16.263"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="13.408" y="13.784"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+</g>
+</svg>
+
+    </div>
+  </body>
+</html>

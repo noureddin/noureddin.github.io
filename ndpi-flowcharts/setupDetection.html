@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <title>setupDetection</title>
     <style>
+      @font-face {
+        /* https://www.amirifont.org/ */
+        font-family: Amiri;
+        font-style: normal;
+        font-weight: 400;
+        src: url('Amiri-Regular.woff2') format('woff2'),
+             url('Amiri-Regular.woff') format('woff');
+      }
       svg {
         position: relative;
         top: 2.311cm;
@@ -23,32 +31,32 @@
 <g id="Background">
 <!-- Flowchart - Box -->
 <rect x="16.000" y="14.118" width="22.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="27.000" y="15.388"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="27.000" y="15.388"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Enable all protocols</text>
 <!-- Flowchart - Box -->
 <rect x="16.000" y="17.215" width="22.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="27.000" y="18.485"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="27.000" y="18.485"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Clear memory for results</text>
 <!-- Flowchart - Off Page Connector -->
 <a xlink:href="setupDetection-2.html">
 <path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 22.820,20.361 L 31.180,20.361 L 31.180,23.272 L 27.000,24.000 L 22.820,23.272 L 22.820,20.361 z"/>
-<text x="27.000" y="22.136"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="27.000" y="22.136"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 setupDetection/2</text>
 </a>
 <!-- Flowchart - Box -->
 <rect x="16.000" y="4.611" width="22.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="27.000" y="5.881"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="27.000" y="5.881"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Initialize prefs as ndpi_workflow_prefs</text>
 <!-- Flowchart - Terminal -->
 <path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 24.619,1.300 L 29.381,1.300 C 30.039,1.300 30.572,1.762 30.572,2.333 C 30.572,2.903 30.039,3.365 29.381,3.365 L 24.619,3.365 C 23.961,3.365 23.428,2.903 23.428,2.333 C 23.428,1.762 23.961,1.300 24.619,1.300 z"/>
-<text x="27.000" y="2.653"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="27.000" y="2.653"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 setupDetection</text>
 <!-- Flowchart - Predefined Process -->
 <a xlink:href="ndpi_workflow_init.html">
 <rect x="16.000" y="7.757" width="22.000" height="1.909" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
 <line x1="18.200" y1="7.757" x2="18.200" y2="9.667" stroke="#000000" stroke-width="0.100" />
 <line x1="35.800" y1="7.757" x2="35.800" y2="9.667" stroke="#000000" stroke-width="0.100" />
-<text x="27.000" y="9.032"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="27.000" y="9.032"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 ndpi_workflow_init</text>
 </a>
 <!-- Flowchart - Predefined Process -->
@@ -56,7 +64,7 @@ ndpi_workflow_init</text>
 <rect x="16.000" y="10.963" width="22.000" height="1.909" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
 <line x1="18.200" y1="10.963" x2="18.200" y2="12.872" stroke="#000000" stroke-width="0.100" />
 <line x1="35.800" y1="10.963" x2="35.800" y2="12.872" stroke="#000000" stroke-width="0.100" />
-<text x="27.000" y="12.237"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="27.000" y="12.237"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 ndpi_workflow_set_flow_detected_callback</text>
 </a>
 <!-- Standard - Line -->

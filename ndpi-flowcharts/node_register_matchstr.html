@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>node_register_matchstr</title>
+    <style>
+      @font-face {
+        /* https://www.amirifont.org/ */
+        font-family: Amiri;
+        font-style: normal;
+        font-weight: 400;
+        src: url('Amiri-Regular.woff2') format('woff2'),
+             url('Amiri-Regular.woff') format('woff');
+      }
+      svg {
+        position: relative;
+        top: 0.101666666666667cm;
+      }
+      a { outline: none; }
+      a:hover  :not(text) { fill: rgb(204, 204, 255); }
+      a:active :not(text) { fill: rgb(150, 150, 255); }
+    </style>
+  </head>
+  <body>
+    <div align="center">
+
+<svg width="25.9cm" height="19.6866666666667cm" viewBox="4.500 9.259 38.850 29.530"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Layer: Background -->
+<g id="Background">
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 20.777,9.359 L 27.073,9.359 C 27.942,9.359 28.647,9.695 28.647,10.109 C 28.647,10.523 27.942,10.859 27.073,10.859 L 20.777,10.859 C 19.908,10.859 19.203,10.523 19.203,10.109 C 19.203,9.695 19.908,9.359 20.777,9.359 z"/>
+<text x="23.925" y="10.429"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+node_register_matchstr</text>
+<!-- Flowchart - Predefined Process -->
+<a xlink:href="node_has_matchstr.html">
+<rect x="17.425" y="12.020" width="13.000" height="1.909" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<line x1="18.725" y1="12.020" x2="18.725" y2="13.929" stroke="#000000" stroke-width="0.100" />
+<line x1="29.125" y1="12.020" x2="29.125" y2="13.929" stroke="#000000" stroke-width="0.100" />
+<text x="23.925" y="13.294"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+node_has_matchstr</text>
+</a>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="23.925,15.039 28.249,17.361 23.925,19.684 19.601,17.361 "/>
+<text x="23.925" y="17.281"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Did the previous</text>
+<text x="23.925" y="18.081"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+call return true?</text>
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 33.076,16.611 L 37.838,16.611 C 38.495,16.611 39.028,16.947 39.028,17.361 C 39.028,17.776 38.495,18.111 37.838,18.111 L 33.076,18.111 C 32.418,18.111 31.885,17.776 31.885,17.361 C 31.885,16.947 32.418,16.611 33.076,16.611 z"/>
+<text x="35.457" y="17.681"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+End</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="23.925,20.744 32.925,23.254 23.925,25.764 14.925,23.254 "/>
+<text x="23.925" y="22.374"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Is</text>
+<text x="23.925" y="23.174"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+its matched_patterns_num</text>
+<text x="23.925" y="23.974"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+≥ its matched_patterns_max</text>
+<text x="23.925" y="24.774"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+?</text>
+<!-- Standard - Text -->
+<text x="24.424" y="20.185"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="28.263" y="17.004"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Line -->
+<line x1="34.300" y1="33.275" x2="34.300" y2="33.738" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="34.300,34.113 34.050,33.613 34.300,33.738 34.550,33.613 "/>
+<!-- Standard - Line -->
+<line x1="13.550" y1="29.575" x2="13.550" y2="30.038" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="13.550,30.413 13.300,29.913 13.550,30.038 13.800,29.913 "/>
+<!-- Standard - Line -->
+<line x1="34.300" y1="36.175" x2="34.300" y2="36.703" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="34.300,37.078 34.050,36.578 34.300,36.703 34.550,36.578 "/>
+<!-- Standard - Line -->
+<line x1="23.925" y1="10.909" x2="23.925" y2="11.533" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.925,11.908 23.675,11.408 23.925,11.533 24.175,11.408 "/>
+<!-- Standard - Line -->
+<line x1="23.925" y1="13.978" x2="23.925" y2="14.502" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.925,14.877 23.675,14.377 23.925,14.502 24.175,14.377 "/>
+<!-- Standard - Line -->
+<line x1="23.925" y1="19.684" x2="23.925" y2="20.257" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.925,20.632 23.675,20.132 23.925,20.257 24.175,20.132 "/>
+<!-- Standard - Line -->
+<line x1="28.249" y1="17.361" x2="31.398" y2="17.361" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="31.773,17.361 31.273,17.611 31.398,17.361 31.273,17.111 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="32.925,23.254 34.300,23.254 34.300,30.038 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="34.300,30.413 34.050,29.913 34.300,30.038 34.550,29.913 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="14.925,23.254 13.550,23.254 13.550,26.338 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="13.550,26.713 13.300,26.213 13.550,26.338 13.800,26.213 "/>
+<!-- Flowchart - Box -->
+<rect x="25.300" y="30.525" width="18.000" height="2.700" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="34.300" y="31.795"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Copy the given pattern&apos;s astring, length, is_existing,</text>
+<text x="34.300" y="32.595"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+and rep to the respective fields of the current pattern</text>
+<!-- Flowchart - Box -->
+<rect x="25.300" y="34.225" width="18.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="34.300" y="35.495"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Increment its matched_patterns_num</text>
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 31.919,37.190 L 36.681,37.190 C 37.339,37.190 37.872,37.525 37.872,37.940 C 37.872,38.354 37.339,38.690 36.681,38.690 L 31.919,38.690 C 31.261,38.690 30.728,38.354 30.728,37.940 C 30.728,37.525 31.261,37.190 31.919,37.190 z"/>
+<text x="34.300" y="38.260"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+End</text>
+<!-- Flowchart - Box -->
+<rect x="4.550" y="26.825" width="18.000" height="2.700" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="13.550" y="28.095"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Realloc its matched_patterns to increase</text>
+<text x="13.550" y="28.895"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+its length by REALLOC_CHUNK_MATCHSTR</text>
+<!-- Flowchart - Box -->
+<rect x="4.550" y="30.525" width="18.000" height="2.700" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="13.550" y="31.795"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Increment its matched_patterns_max</text>
+<text x="13.550" y="32.595"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+by REALLOC_CHUNK_MATCHSTR</text>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="13.550,33.225 13.550,34.275 23.925,34.275 23.925,28.944 34.300,28.944 34.300,30.038 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="34.300,30.413 34.050,29.913 34.300,30.038 34.550,29.913 "/>
+<!-- Standard - Text -->
+<text x="14.280" y="22.772"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="32.642" y="22.852"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+</g>
+</svg>
+
+    </div>
+  </body>
+</html>

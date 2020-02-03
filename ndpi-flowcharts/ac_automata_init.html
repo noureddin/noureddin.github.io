@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <title>ac_automata_init</title>
     <style>
+      @font-face {
+        /* https://www.amirifont.org/ */
+        font-family: Amiri;
+        font-style: normal;
+        font-weight: 400;
+        src: url('Amiri-Regular.woff2') format('woff2'),
+             url('Amiri-Regular.woff') format('woff');
+      }
       svg {
         position: relative;
         top: 0.378333333333334cm;
@@ -23,26 +31,26 @@
 <g id="Background">
 <!-- Flowchart - Terminal -->
 <path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 20.500,-3.000 L 28.500,-3.000 C 29.605,-3.000 30.500,-2.664 30.500,-2.250 C 30.500,-1.836 29.605,-1.500 28.500,-1.500 L 20.500,-1.500 C 19.395,-1.500 18.500,-1.836 18.500,-2.250 C 18.500,-2.664 19.395,-3.000 20.500,-3.000 z"/>
-<text x="24.500" y="-1.930"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="-1.930"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 ac_automata_init </text>
 <!-- Flowchart - Terminal -->
 <path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 20.500,24.000 L 28.500,24.000 C 29.605,24.000 30.500,24.336 30.500,24.750 C 30.500,25.164 29.605,25.500 28.500,25.500 L 20.500,25.500 C 19.395,25.500 18.500,25.164 18.500,24.750 C 18.500,24.336 19.395,24.000 20.500,24.000 z"/>
-<text x="24.500" y="25.070"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="25.070"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Return the automata</text>
 <!-- Flowchart - Box -->
 <rect x="12.000" y="-0.642" width="25.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="24.500" y="0.628"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="0.628"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Alloc an AC_AUTOMATA_t and zero it</text>
 <!-- Flowchart - Box -->
 <rect x="12.000" y="4.884" width="25.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="24.500" y="6.154"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="6.154"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Initialize root with the return value of node_create</text>
 <!-- Flowchart - Predefined Process -->
 <a xlink:href="node_create.html">
 <rect x="12.000" y="2.116" width="25.000" height="1.909" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
 <line x1="14.500" y1="2.116" x2="14.500" y2="4.026" stroke="#000000" stroke-width="0.100" />
 <line x1="34.500" y1="2.116" x2="34.500" y2="4.026" stroke="#000000" stroke-width="0.100" />
-<text x="24.500" y="3.391"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="3.391"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 node_create</text>
 </a>
 <!-- Flowchart - Predefined Process -->
@@ -50,28 +58,28 @@ node_create</text>
 <rect x="12.000" y="15.766" width="25.000" height="1.909" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
 <line x1="14.500" y1="15.766" x2="14.500" y2="17.675" stroke="#000000" stroke-width="0.100" />
 <line x1="34.500" y1="15.766" x2="34.500" y2="17.675" stroke="#000000" stroke-width="0.100" />
-<text x="24.500" y="17.041"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="17.041"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 ac_automata_register_nodeptr </text>
 </a>
 <!-- Flowchart - Box -->
 <rect x="12.000" y="10.300" width="25.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="24.500" y="11.570"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="11.570"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Alloc all_nodes</text>
 <!-- Flowchart - Box -->
 <rect x="12.000" y="7.592" width="25.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="24.500" y="8.862"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="8.862"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Initialize all_nodes_max with REALLOC_CHUNK_ALLNODES</text>
 <!-- Flowchart - Box -->
 <rect x="12.000" y="13.008" width="25.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="24.500" y="14.278"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="14.278"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Initialize match_callback with mc</text>
 <!-- Flowchart - Box -->
 <rect x="12.000" y="18.534" width="25.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="24.500" y="19.804"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="19.804"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Initialize total_patterns with 0</text>
 <!-- Flowchart - Box -->
 <rect x="12.000" y="21.242" width="25.000" height="1.900" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
-<text x="24.500" y="22.512"  fill="#000000" text-anchor="middle" font-size="0.7" font-family="Amiri" font-style="normal" font-weight="400">
+<text x="24.500" y="22.512"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
 Initialize automata_open with 1</text>
 <!-- Standard - Line -->
 <line x1="24.500" y1="-1.451" x2="24.500" y2="-1.129" stroke="#000000" stroke-width="0.100" />
