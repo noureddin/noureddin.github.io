@@ -10,60 +10,74 @@
       table { /* center */ margin: 0 auto; border: none; }
       td:first-child { text-align: left; }
       td.def { text-align: right; font-size: 65%; }
+      a { text-decoration: none; color: #1034A6; } /* Egyptian Blue, b/c I'm Egyptian :P */
+      #main {
+        text-align: center;
+        font-weight: bold;
+        font-size: 150%;
+      }
+      hr { margin-top: 1rem; }
     </style>
   </head>
   <body>
     <h1>nDPI Flowcharts (Unofficial)</h1>
+    <div id="main"><a href="main.html">Start Here!</a></div>
+    <hr>
     <h2>Currently Charted Functions</h2>
-    <ul>
-      <li><p style="font-weight: bold"><a href="main.html">main</a></p></li>
-      <li><p><a href="ac_automata_finalize.html">ac_automata_finalize</a></p></li>
-      <li><p><a href="ac_automata_init.html">ac_automata_init</a></p></li>
-      <li><p><a href="ac_automata_register_nodeptr.html">ac_automata_register_nodeptr</a></p></li>
-      <li><p><a href="ac_automata_set_failure.html">ac_automata_set_failure</a></p></li>
-      <li><p><a href="ac_automata_traverse_setfailure.html">ac_automata_traverse_setfailure</a></p></li>
-      <li><p><a href="ac_automata_union_matchstrs.html">ac_automata_union_matchstrs</a></p></li>
-      <li><p><a href="add_to_ptree.html">add_to_ptree</a></p></li>
-      <li><p><a href="configurePcapHandle.html">configurePcapHandle</a></p></li>
-      <li><p><a href="fill_prefix_v4.html">fill_prefix_v4</a></p></li>
-      <li><p><a href="getNextPcapFileFromPlaylist.html">getNextPcapFileFromPlaylist</a></p></li>
-      <li><p><a href="ndpi_New_Patricia.html">ndpi_New_Patricia</a></p></li>
-      <li><p><a href="ndpi_New_Prefix2.html">ndpi_New_Prefix2</a></p></li>
-      <li><p><a href="ndpi_Ref_Prefix.html">ndpi_Ref_Prefix</a></p></li>
-      <li><p><a href="ndpi_finalize_initalization.html">ndpi_finalize_initalization</a></p></li>
-      <li><p><a href="ndpi_init_detection_module.html">ndpi_init_detection_module</a></p></li>
-      <li><p><a href="ndpi_init_protocol_defaults.html">ndpi_init_protocol_defaults</a></p></li>
-      <li><p><a href="ndpi_init_ptree_ipv4.html">ndpi_init_ptree_ipv4</a></p></li>
-      <li><p><a href="ndpi_load_categories_file.html">ndpi_load_categories_file</a></p></li>
-      <li><p><a href="ndpi_load_category.html">ndpi_load_category</a></p></li>
-      <li><p><a href="ndpi_load_protocols_file.html">ndpi_load_protocols_file</a></p></li>
-      <li><p><a href="ndpi_validate_protocol_initialization.html">ndpi_validate_protocol_initialization</a></p></li>
-      <li><p><a href="ndpi_workflow_init.html">ndpi_workflow_init</a></p></li>
-      <li><p><a href="ndpi_workflow_set_flow_detected_callback.html">ndpi_workflow_set_flow_detected_callback</a></p></li>
-      <li><p><a href="node_create.html">node_create</a></p></li>
-      <li><p><a href="node_find_next.html">node_find_next</a></p></li>
-      <li><p><a href="node_has_matchstr.html">node_has_matchstr</a></p></li>
-      <li><p><a href="node_init.html">node_init</a></p></li>
-      <li><p><a href="node_register_matchstr.html">node_register_matchstr</a></p></li>
-      <li><p><a href="node_sort_edges.html">node_sort_edges</a></p></li>
-      <li><p><a href="openPcapFileOrDevice.html">openPcapFileOrDevice</a></p></li>
-      <li><p><a href="processing_thread.html">processing_thread</a></p></li>
-      <li><p><a href="setupDetection.html">setupDetection</a></p></li>
-      <li><p><a href="terminateDetection.html">terminateDetection</a></p></li>
-      <li><p><a href="test_lib.html">test_lib</a></p></li>
-    </ul><hr>
+    <table>
+      <tr><td><a href="configurePcapHandle.html">configurePcapHandle</a></td><td class="def">defined in <b>example/ndpiReader.c</b></td></tr>
+      <tr><td><a href="getNextPcapFileFromPlaylist.html">getNextPcapFileFromPlaylist</a></td><td class="def">defined in <b>example/ndpiReader.c</b></td></tr>
+      <tr><td><a href="openPcapFileOrDevice.html">openPcapFileOrDevice</a></td><td class="def">defined in <b>example/ndpiReader.c</b></td></tr>
+      <tr><td><a href="processing_thread.html">processing_thread</a></td><td class="def">defined in <b>example/ndpiReader.c</b></td></tr>
+      <tr><td><a href="setupDetection.html">setupDetection</a></td><td class="def">defined in <b>example/ndpiReader.c</b></td></tr>
+      <tr><td><a href="terminateDetection.html">terminateDetection</a></td><td class="def">defined in <b>example/ndpiReader.c</b></td></tr>
+      <tr><td><a href="test_lib.html">test_lib</a></td><td class="def">defined in <b>example/ndpiReader.c</b></td></tr>
+      <tr><td style="padding:5px"></td><td></td></tr>
+      <tr><td><a href="ndpi_workflow_init.html">ndpi_workflow_init</a></td><td class="def">defined in <b>example/reader_util.c</b></td></tr>
+      <tr><td><a href="ndpi_workflow_set_flow_detected_callback.html">ndpi_workflow_set_flow_detected_callback</a></td><td class="def">defined in <b>example/reader_util.h</b></td></tr>
+      <tr><td style="padding:5px"></td><td></td></tr>
+      <tr><td><a href="add_to_ptree.html">add_to_ptree</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="fill_prefix_v4.html">fill_prefix_v4</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_finalize_initalization.html">ndpi_finalize_initalization</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_init_detection_module.html">ndpi_init_detection_module</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_init_protocol_defaults.html">ndpi_init_protocol_defaults</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_init_ptree_ipv4.html">ndpi_init_ptree_ipv4</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_load_categories_file.html">ndpi_load_categories_file</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_load_category.html">ndpi_load_category</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_load_protocols_file.html">ndpi_load_protocols_file</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_validate_protocol_initialization.html">ndpi_validate_protocol_initialization</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td style="padding:5px"></td><td></td></tr>
+      <tr><td><a href="ac_automata_finalize.html">ac_automata_finalize</a></td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c</b></td></tr>
+      <tr><td><a href="ac_automata_init.html">ac_automata_init</a></td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c</b></td></tr>
+      <tr><td><a href="ac_automata_register_nodeptr.html">ac_automata_register_nodeptr</a></td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c</b></td></tr>
+      <tr><td><a href="ac_automata_set_failure.html">ac_automata_set_failure</a></td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c</b></td></tr>
+      <tr><td><a href="ac_automata_traverse_setfailure.html">ac_automata_traverse_setfailure</a></td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c</b></td></tr>
+      <tr><td><a href="ac_automata_union_matchstrs.html">ac_automata_union_matchstrs</a></td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c</b></td></tr>
+      <tr><td style="padding:5px"></td><td></td></tr>
+      <tr><td><a href="ndpi_New_Patricia.html">ndpi_New_Patricia</a></td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
+      <tr><td><a href="ndpi_New_Prefix2.html">ndpi_New_Prefix2</a></td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
+      <tr><td><a href="ndpi_Ref_Prefix.html">ndpi_Ref_Prefix</a></td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
+      <tr><td style="padding:5px"></td><td></td></tr>
+      <tr><td><a href="node_create.html">node_create</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
+      <tr><td><a href="node_create_next.html">node_create_next</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
+      <tr><td><a href="node_find_next.html">node_find_next</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
+      <tr><td><a href="node_has_matchstr.html">node_has_matchstr</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
+      <tr><td><a href="node_init.html">node_init</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
+      <tr><td><a href="node_register_matchstr.html">node_register_matchstr</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
+      <tr><td><a href="node_sort_edges.html">node_sort_edges</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
+    </table><hr>
     <h2>Not-yet Charted Functions<br><span class="subheader">(That Are Linked From The Currently Charted Functions)</span></h2>
     <table>
-        <tr><td>init_string_based_protocols</td><td class="def">defined in <b>../src/lib/ndpi_main.c</b></td></tr>
-        <tr><td>ndpi_enable_loaded_categories</td><td class="def">defined in <b>../src/lib/ndpi_main.c</b></td></tr>
-        <tr><td>ndpi_handle_rule</td><td class="def">defined in <b>../src/lib/ndpi_main.c</b></td></tr>
-        <tr><td>ndpi_load_hostname_category</td><td class="def">defined in <b>../src/lib/ndpi_main.c</b></td></tr>
-        <tr><td>ndpi_load_ip_category</td><td class="def">defined in <b>../src/lib/ndpi_main.c</b></td></tr>
-        <tr><td>ndpi_patricia_lookup</td><td class="def">defined in <b>../src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
-        <tr><td>ndpi_set_proto_defaults</td><td class="def">defined in <b>../src/lib/ndpi_main.c</b></td></tr>
-      </table><hr>
-      <p>Online Repo: <a href="https://github.com/noureddin/ndpi-flowcharts">github.com/noureddin/ndpi-flowcharts</a></p>
-      <p>Online Demo: <a href="https://noureddin.github.io/ndpi-flowcharts">noureddin.github.io/ndpi-flowcharts</a></p>
-      <p>nDPI   Repo: <a href="https://github.com/ntop/nDPI">github.com/ntop/nDPI</a></p>
-    </body>
-  </html>
+      <tr><td>init_string_based_protocols</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td>ndpi_enable_loaded_categories</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td>ndpi_handle_rule</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td>ndpi_load_hostname_category</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td>ndpi_load_ip_category</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td>ndpi_set_proto_defaults</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td>ndpi_patricia_lookup</td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
+    </table><hr>
+    <p>Online Repo: <a href="https://github.com/noureddin/ndpi-flowcharts">github.com/noureddin/ndpi-flowcharts</a></p>
+    <p>Online Demo: <a href="https://noureddin.github.io/ndpi-flowcharts">noureddin.github.io/ndpi-flowcharts</a></p>
+    <p>nDPI   Repo: <a href="https://github.com/ntop/nDPI">github.com/ntop/nDPI</a></p>
+  </body>
+</html>
