@@ -5,7 +5,6 @@
     <title>nDPI Flowcharts (Unofficial)</title>
     <style>
       * { text-align: center; }
-      .subheader { font-size: 75%; }
       li { list-style: none; }
       table { /* center */ margin: 0 auto; border: none; }
       td:first-child { text-align: left; }
@@ -39,6 +38,10 @@
       <tr><td><a href="add_to_ptree.html">add_to_ptree</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td><a href="fill_prefix_v4.html">fill_prefix_v4</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td><a href="init_string_based_protocols.html">init_string_based_protocols</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_add_host_url_subprotocol.html">ndpi_add_host_url_subprotocol</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_build_default_ports.html">ndpi_build_default_ports</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_build_default_ports_range.html">ndpi_build_default_ports_range</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_enable_loaded_categories.html">ndpi_enable_loaded_categories</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td><a href="ndpi_finalize_initalization.html">ndpi_finalize_initalization</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td><a href="ndpi_init_detection_module.html">ndpi_init_detection_module</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td><a href="ndpi_init_protocol_defaults.html">ndpi_init_protocol_defaults</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
@@ -46,6 +49,7 @@
       <tr><td><a href="ndpi_load_categories_file.html">ndpi_load_categories_file</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td><a href="ndpi_load_category.html">ndpi_load_category</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td><a href="ndpi_load_protocols_file.html">ndpi_load_protocols_file</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
+      <tr><td><a href="ndpi_set_proto_defaults.html">ndpi_set_proto_defaults</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td><a href="ndpi_validate_protocol_initialization.html">ndpi_validate_protocol_initialization</a></td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
       <tr><td style="padding:5px"></td><td></td></tr>
       <tr><td><a href="ac_automata_finalize.html">ac_automata_finalize</a></td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c</b></td></tr>
@@ -57,6 +61,7 @@
       <tr><td><a href="ac_automata_union_matchstrs.html">ac_automata_union_matchstrs</a></td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c</b></td></tr>
       <tr><td style="padding:5px"></td><td></td></tr>
       <tr><td><a href="ndpi_DeleteEntry.html">ndpi_DeleteEntry</a></td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
+      <tr><td><a href="ndpi_Deref_Prefix.html">ndpi_Deref_Prefix</a></td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
       <tr><td><a href="ndpi_Destroy_Patricia.html">ndpi_Destroy_Patricia</a></td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
       <tr><td><a href="ndpi_New_Patricia.html">ndpi_New_Patricia</a></td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
       <tr><td><a href="ndpi_New_Prefix2.html">ndpi_New_Prefix2</a></td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
@@ -71,17 +76,36 @@
       <tr><td><a href="node_release.html">node_release</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
       <tr><td><a href="node_sort_edges.html">node_sort_edges</a></td><td class="def">defined in <b>src/lib/third_party/src/node.c</b></td></tr>
     </table><hr>
-    <h2>Not-yet Charted Functions<br><span class="subheader">(That Are Linked From The Currently Charted Functions)</span></h2>
+    <h2>Not-yet Charted Functions</h2>
     <table>
-      <tr><td>ndpi_enable_loaded_categories</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
-      <tr><td>ndpi_handle_rule</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
-      <tr><td>ndpi_init_protocol_match</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
-      <tr><td>ndpi_load_hostname_category</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
-      <tr><td>ndpi_load_ip_category</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
-      <tr><td>ndpi_set_proto_defaults</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
-      <tr><td>ndpi_string_to_automa</td><td class="def">defined in <b>src/lib/ndpi_main.c</b></td></tr>
-      <tr><td>ndpi_Clear_Patricia</td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
-      <tr><td>ndpi_patricia_lookup</td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c</b></td></tr>
+      <tr><td>addDefaultPort</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>ndpi_add_host_ip_subprotocol</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>ndpi_handle_rule</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>ndpi_init_protocol_match</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>ndpi_load_hostname_category</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>ndpi_load_ip_category</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>ndpi_remove_host_url_subprotocol</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>ndpi_string_to_automa</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>removeDefaultPort</td><td class="def">defined in <b>src/lib/ndpi_main.c
+</b></td></tr>
+      <tr><td>ndpi_tdelete</td><td class="def">defined in <b>src/lib/ndpi_utils.c
+</b></td></tr>
+      <tr><td>ndpi_tsearch</td><td class="def">defined in <b>src/lib/ndpi_utils.c
+</b></td></tr>
+      <tr><td>ac_automata_add</td><td class="def">defined in <b>src/lib/third_party/src/ahocorasick.c
+</b></td></tr>
+      <tr><td>ndpi_Clear_Patricia</td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c
+</b></td></tr>
+      <tr><td>ndpi_patricia_lookup</td><td class="def">defined in <b>src/lib/third_party/src/ndpi_patricia.c
+</b></td></tr>
     </table><hr>
     <p>Online Repo: <a href="https://github.com/noureddin/ndpi-flowcharts">github.com/noureddin/ndpi-flowcharts</a></p>
     <p>Online Demo: <a href="https://noureddin.github.io/ndpi-flowcharts">noureddin.github.io/ndpi-flowcharts</a></p>
