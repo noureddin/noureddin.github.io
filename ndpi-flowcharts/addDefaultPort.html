@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>addDefaultPort</title>
+    <style>
+      @font-face {
+        /* https://www.amirifont.org/ */
+        font-family: Amiri;
+        font-style: normal;
+        font-weight: 400;
+        src: url('Amiri-Regular.woff2') format('woff2'),
+             url('Amiri-Regular.woff') format('woff');
+      }
+      svg {
+        position: relative;
+        top: 1.75cm;
+      }
+      a { outline: none; }
+      a:hover  :not(text) { fill: rgb(204, 204, 255); }
+      a:active :not(text) { fill: rgb(150, 150, 255); }
+    </style>
+  </head>
+  <body>
+    <div align="center">
+
+<svg width="33.2333333333333cm" height="16.39cm" viewBox="21.350 -41.623 49.850 24.585"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Layer: Background -->
+<g id="Background">
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 33.188,-41.523 L 41.812,-41.523 C 43.003,-41.523 43.969,-41.187 43.969,-40.773 C 43.969,-40.358 43.003,-40.023 41.812,-40.023 L 33.188,-40.023 C 31.997,-40.023 31.032,-40.358 31.032,-40.773 C 31.032,-41.187 31.997,-41.523 33.188,-41.523 z"/>
+<text x="37.500" y="-40.453"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+addDefaultPort</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="37.500,-35.807 44.000,-33.307 37.500,-30.807 31.000,-33.307 "/>
+<text x="37.500" y="-32.987"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Is port ≤ range&apos;s port_high?</text>
+<!-- Flowchart - Box -->
+<rect x="54.230" y="-39.000" width="15.000" height="3.000" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="61.730" y="-37.580"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Set the node&apos;s proto</text>
+<text x="61.730" y="-36.780"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+to the given proto_defaults</text>
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 45.597,-31.792 L 49.023,-31.792 C 49.497,-31.792 49.880,-31.504 49.880,-31.148 C 49.880,-30.793 49.497,-30.505 49.023,-30.505 L 45.597,-30.505 C 45.123,-30.505 44.740,-30.793 44.740,-31.148 C 44.740,-31.504 45.123,-31.792 45.597,-31.792 z"/>
+<text x="47.310" y="-30.828"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+End</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="61.730,-31.950 68.230,-29.450 61.730,-26.950 55.230,-29.450 "/>
+<text x="61.730" y="-29.130"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Does its return value != node?</text>
+<!-- Flowchart - Diamond -->
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  points="37.500,-26.640 44.000,-24.140 37.500,-21.640 31.000,-24.140 "/>
+<text x="37.500" y="-23.820"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Is the node NULL?</text>
+<!-- Flowchart - Box -->
+<rect x="30.000" y="-29.724" width="15.000" height="2.000" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="37.500" y="-28.404"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Alloc an ndpi_default_ports_tree_node_t</text>
+<!-- Flowchart - Box -->
+<rect x="30.000" y="-38.890" width="15.000" height="2.000" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="37.500" y="-37.570"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Set port to range&apos;s port_low</text>
+<!-- Flowchart - Box -->
+<rect x="54.230" y="-25.975" width="15.000" height="3.000" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="61.730" y="-24.555"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Set the return&apos;s value proto</text>
+<text x="61.730" y="-23.755"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+to the given proto_defaults</text>
+<!-- Flowchart - Box -->
+<rect x="54.230" y="-22.000" width="15.000" height="2.000" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="61.730" y="-20.680"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Free the node</text>
+<!-- Flowchart - Box -->
+<rect x="23.300" y="-34.307" width="6.000" height="2.000" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<text x="26.300" y="-32.987"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Increment port</text>
+<!-- Flowchart - Terminal -->
+<path stroke="#000000" fill="#FFFFFF" stroke-width="0.100"  d="M 35.787,-20.508 L 39.213,-20.508 C 39.687,-20.508 40.070,-20.172 40.070,-19.758 C 40.070,-19.343 39.687,-19.008 39.213,-19.008 L 35.787,-19.008 C 35.313,-19.008 34.930,-19.343 34.930,-19.758 C 34.930,-20.172 35.313,-20.508 35.787,-20.508 z"/>
+<text x="37.500" y="-19.438"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Return</text>
+<!-- Flowchart - Predefined Process -->
+<a xlink:href="ndpi_tsearch.html">
+<rect x="54.230" y="-34.975" width="15.000" height="2.000" fill="#FFFFFF" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<line x1="55.730" y1="-34.975" x2="55.730" y2="-32.975" stroke="#000000" stroke-width="0.100" />
+<line x1="67.730" y1="-34.975" x2="67.730" y2="-32.975" stroke="#000000" stroke-width="0.100" />
+<text x="61.730" y="-33.655"  fill="#000000" text-anchor="middle" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+ndpi_tsearch</text>
+</a>
+<!-- Standard - Line -->
+<line x1="37.500" y1="-39.972" x2="37.500" y2="-39.425" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="37.500,-39.050 37.250,-39.550 37.500,-39.425 37.750,-39.550 "/>
+<!-- Standard - Line -->
+<line x1="37.500" y1="-36.840" x2="37.500" y2="-36.343" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="37.500,-35.968 37.250,-36.468 37.500,-36.343 37.750,-36.468 "/>
+<!-- Standard - Line -->
+<line x1="37.500" y1="-30.757" x2="37.500" y2="-30.260" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="37.500,-29.885 37.250,-30.385 37.500,-30.260 37.750,-30.385 "/>
+<!-- Standard - Line -->
+<line x1="37.500" y1="-27.673" x2="37.500" y2="-27.177" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="37.500,-26.802 37.250,-27.302 37.500,-27.177 37.750,-27.302 "/>
+<!-- Standard - Line -->
+<line x1="37.500" y1="-21.591" x2="37.500" y2="-21.043" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="37.500,-20.668 37.250,-21.168 37.500,-21.043 37.750,-21.168 "/>
+<!-- Standard - Line -->
+<line x1="29.350" y1="-33.307" x2="30.463" y2="-33.307" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="30.838,-33.307 30.338,-33.057 30.463,-33.307 30.338,-33.557 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="44.050,-24.140 51.800,-24.140 51.800,-41.138 61.730,-41.138 61.730,-39.487 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="61.730,-39.112 61.480,-39.612 61.730,-39.487 61.980,-39.612 "/>
+<!-- Standard - Line -->
+<line x1="61.730" y1="-35.950" x2="61.730" y2="-35.512" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="61.730,-35.137 61.480,-35.637 61.730,-35.512 61.980,-35.637 "/>
+<!-- Standard - Line -->
+<line x1="61.730" y1="-32.925" x2="61.730" y2="-32.487" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="61.730,-32.112 61.480,-32.612 61.730,-32.487 61.980,-32.612 "/>
+<!-- Standard - Line -->
+<line x1="61.730" y1="-26.900" x2="61.730" y2="-26.512" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="61.730,-26.137 61.480,-26.637 61.730,-26.512 61.980,-26.637 "/>
+<!-- Standard - Line -->
+<line x1="61.730" y1="-22.926" x2="61.730" y2="-22.536" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="61.730,-22.161 61.480,-22.661 61.730,-22.536 61.980,-22.661 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="61.730,-20.000 61.730,-17.087 21.400,-17.087 21.400,-33.307 22.813,-33.307 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="23.188,-33.307 22.688,-33.057 22.813,-33.307 22.688,-33.557 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="68.230,-29.450 71.150,-29.450 71.150,-17.087 41.565,-17.087 "/>
+<!-- Standard - ZigZagLine -->
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="44.000,-33.307 47.310,-33.307 47.310,-32.328 "/>
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="47.310,-31.953 47.060,-32.453 47.310,-32.328 47.560,-32.453 "/>
+<!-- Standard - Text -->
+<text x="37.942" y="-20.953"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="37.942" y="-30.111"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="62.242" y="-26.403"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+Yes</text>
+<!-- Standard - Text -->
+<text x="44.000" y="-24.470"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="44.000" y="-33.678"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+<!-- Standard - Text -->
+<text x="68.250" y="-29.885"  fill="#000000" text-anchor="start" font-size="0.75" font-family="Amiri" font-style="normal" font-weight="400">
+No</text>
+</g>
+</svg>
+
+    </div>
+  </body>
+</html>
