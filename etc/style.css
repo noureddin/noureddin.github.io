@@ -1,0 +1,139 @@
+:root {
+  --bg: #112;
+  --fg: #e0e0ef;
+  --sf: rgba(128, 128, 255, 0.15);
+  --width: min(95vw, 35em);
+}
+
+html {
+  font-family: Amiri;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  margin: 0;
+  padding: 1em;
+  padding-top: 0;
+  overflow-x: hidden;
+  padding-bottom: 5em;
+}
+
+#page {
+  margin: auto;  /* center */
+  width: var(--width);
+  text-align: center;
+}
+
+#cover {
+  width: 35em;
+  /* height: auto; */
+  margin-bottom: -7em;
+}
+
+a { text-decoration: none }
+a[href]:focus, a[href]:hover, a[href]:active { text-decoration: underline 1px }
+a { text-underline-offset: 0.35rem }
+
+h2 { text-align: center }
+
+#software { position: relative }
+
+#software, #writings { margin-top: 4em }
+
+.software-description {
+  display: block;
+  --w: calc(var(--width)/1.5);
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  background: var(--sf);
+  border-radius: 1em;
+  width: var(--w);
+  text-align: start;
+}
+
+#software img { opacity: 65% }
+#software img:focus,
+#software img:hover { opacity: 100% }
+
+:not(a) + .software-description {
+  width: var(--w);
+  margin: 0 auto;
+  opacity: 65%;
+}
+
+:not(a) + .software-description:focus,
+:not(a) + .software-description:hover {
+  opacity: 100%;
+}
+
+a + .software-description {
+  display: none;
+}
+
+a:focus + .software-description,
+a:hover + .software-description {
+  display: block;
+  position: absolute;
+  left: calc(50% - var(--w)/2);
+  right: calc(50% - var(--w)/2);
+}
+
+
+/* hide default description when showing another one */
+a:focus + .software-description + .software-description,
+a:hover + .software-description + .software-description,
+a:focus + .software-description ~ .software-description + .software-description,
+a:hover + .software-description ~ .software-description + .software-description {
+  visibility: hidden;
+}
+
+/* writings -- copied frow /w/ */
+
+.time    { color: hsl(  0,   0%,  50%) }
+
+a        { color: hsl(220,  60%,  80%) }
+a:focus,
+a:hover  { color: hsl(220, 100%,  75%) }
+a:active { color: hsl(240, 100%,  70%) }
+
+.card .tags a        { color: hsl(200,  30%,  45%) }
+.card .tags a:focus,
+.card .tags a:hover  { color: hsl(200,  40%,  55%) }
+.card .tags a:active { color: hsl(200,  50%,  70%) }
+
+.card > p { color: #a0a0a6 }
+
+#writings { text-align: initial }
+
+.meta { display: flex; justify-content: space-between }
+
+.time {
+  text-align: left;
+  word-spacing: 200%;
+  opacity: 75%;
+}
+.time > * {
+  word-spacing: initial;
+}
+
+.card {
+  padding: 0;
+  margin: 1em;
+  box-sizing: border-box;
+  padding-bottom: 1em;
+  border-bottom: 1px dashed;
+}
+
+.card > p {
+  margin: 0;
+}
+
+.card img {
+  max-width: 75%;
+  max-height: 12em;
+  width: auto;
+}
+

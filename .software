@@ -1,0 +1,47 @@
+/irsaa/
+etc/irsaa.svg
+إرساء — Irsaa
+<p><b>إرساء:</b> تطبيق لاختبار حفظ القرآن الكريم على صفحات المصحف.</p>
+<p><b>Irsaa:</b> Memorization quiz app for the Quran, using images of the printed Mosħaf pages themselves.</p>
+
+/recite/
+etc/recite.svg
+رسيت — Recite
+<p><b>رَسيت:</b> تطبيق لاختبار حفظ القرآن الكريم، بلا كتابة أو بها، والذي يستخدمه تطبيق ذِكر الذِكر.</p>
+<p><b>Recite:</b> Memorization quiz app for the Quran, with or without typing, used by Zikr-uz-Zikr.</p>
+
+/zz/
+etc/zz.svg
+ذِكر الذِكر — Zikr-uz-Zikr
+<p><b>ذِكرُ الذِكرِ:</b> تطبيق «تكرار متباعد» لتثبيت حفظ القرآن الكريم.</p>
+<p><b>Zikr-uz-Zikr:</b> Space-repetition system (SRS) for solidifying the memorization of the Quran.</p>
+
+/ysmu/
+etc/ysmu.svg
+معجم يسمو للمصطلحات التقنية الحديثة
+<p><b>معجم يسمو للمصطلحات التقنية الحديثة:</b> معجم مجتمعي نتخير فيه أفضل مصطلح عربي فصيح سليم يجمع بين المعنى التقني والاستعمال الأصلي للكلمة العربية أو صحة اشتقاقها، ونشرح فيه أسباب اختيار هذا المصطلح والإعراض عن غيره.</p>
+
+
+https://github.com/noureddin/ePread/
+etc/epread.svg
+إيپريد — ePread
+<p><b>إيـپريد:</b> قارئ ملفات ePub للحواسيب، مناسب لاستخدام لوحة المفاتيح أو شاشة اللمس.</p>
+<p><b>ePread:</b> Desktop ePub reader, suitable for keyboard use or touch screen.</p>
+
+https://github.com/noureddin/cuteview/
+etc/cuteview.svg
+كيوت&zwnj;ڤيو — CuteView
+<p><b>كيوت&zwnj;ڤيو:</b> عارض صور وقارئ ملفات PDF للحواسيب، مناسب لاستخدام لوحة المفاتيح أو شاشة اللمس.</p>
+<p><b>CuteView:</b> Desktop Image viewer and PDF reader, suitable for keyboard use or touch screen.</p>
+
+https://github.com/noureddin/lanbeeper/
+etc/lanbeeper.svg
+الأشار المحلي — LanBeeper
+<p><b>الأشّار المحلي:</b> فيما بعد</p>
+<p><b>LanBeeper:</b> todo</p>
+
+/kbt/
+etc/kbt.svg
+مدرب لوحات المفاتيح — Keyboard Trainer
+<p><b>مدرب لوحات المفاتيح:</b> تعلم الطباعة باللمس على أي تخطيط لوحة مفاتيح بالتمرين على كلمات حقيقة كاملة من أول درس.</p>
+<p><b>Keyboard Trainer:</b>  Learn touch-typing a keyboard layout by training on real, full words from the very first lesson.</p>
