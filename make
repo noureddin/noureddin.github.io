@@ -49,7 +49,11 @@ $software .= q[
   </section>
 ] =~ s/\s+/ /gr =~ s/<p> /<p>/gr =~ s| </p>|</p>|gr;
 
-my $writings = slurp('../w/index.html') =~ s|.*<main>(.*?)</main>.*|$1|sr =~ s|<img.*?>||gr =~ s| href="|$&/w/|gr;
+my $writings = slurp('../w/index.html')
+  =~ s|.*<main>(.*?)</main>.*|$1|sr
+  =~ s|<center><picture>.*?</picture></center>||gr
+  =~ s| href="|$&/w/|gr
+  ;
 
 open my $f, '<', '.index.html';
 while (<$f>) {
