@@ -5,7 +5,7 @@ html {
   font-size: 24px;
 }
 body {
-  background: #112;
+  background: #191929;
   color: #e0e0ef;
   margin: 0;
   padding: 1em;
@@ -32,6 +32,8 @@ a[href]:focus, a[href]:hover, a[href]:active { text-decoration: underline 1px }
 a { text-underline-offset: 0.35rem }
 
 h2 { text-align: center }
+
+h3 { margin: 0; padding: 0 }
 
 #software { position: relative }
 

@@ -52,6 +52,7 @@ $software .= q[
 my $writings = slurp('../w/index.html')
   =~ s|.*<main>(.*?)</main>.*|$1|sr
   =~ s|<center><picture>.*?</picture></center>||gr
+  =~ s|(</?h)2>|${1}3>|gr
   =~ s| href="|$&/w/|gr
   ;
 
