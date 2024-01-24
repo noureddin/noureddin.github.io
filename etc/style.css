@@ -14,6 +14,10 @@ body {
   padding-bottom: 5em;
 }
 
+* {
+  font-weight: normal;
+}
+
 #page {
   margin: auto;  /* center */
   width: min(95vw, 35em);
@@ -86,19 +90,21 @@ a:hover + .software-description ~ .software-description + .software-description 
   visibility: hidden;
 }
 
-/* writings -- copied frow /w/ */
+/* writings -- copied frow /w/ with modifications */
 
 .time    { color: hsl(  0,   0%,  50%) }
 
-a        { color: hsl(220,  60%,  80%) }
-a:focus,
-a:hover  { color: hsl(220, 100%,  75%) }
-a:active { color: hsl(240, 100%,  70%) }
+a:link   { color: hsl(220, 100%,  85%) }
+a:visited{ color: hsl(270,  50%,  70%) }
+a:focus  {
+   outline-color: hsl(200, 100%,  80%) }
+a:hover  { color: hsl(200, 100%,  80%) }
+a:active {
+  background: hsl(220,  60%,  80%);
+  color: #2a2929;
+}
 
-.card .tags a        { color: hsl(200,  30%,  45%) }
-.card .tags a:focus,
-.card .tags a:hover  { color: hsl(200,  40%,  55%) }
-.card .tags a:active { color: hsl(200,  50%,  70%) }
+.card .tags a { opacity: 65% }
 
 .card > p { color: #a0a0a6 }
 
@@ -131,5 +137,36 @@ a:active { color: hsl(240, 100%,  70%) }
   max-width: 75%;
   max-height: 12em;
   width: auto;
+}
+
+@media (prefers-color-scheme: light) {  /* or no preference */
+
+  body {
+    background: #f6f6ff;
+    color: #112;
+  }
+
+  .software-description {
+    background: rgba(128, 128, 255, 0.25);
+  }
+
+  /* writings -- copied frow /w/ with modifications */
+
+  .time    { color: hsl(  0,   0%,  40%) }
+
+  a:link    { color: hsl(220,  70%,  35%) }
+  a:visited { color: hsl(280,  50%,  40%) }
+  a:focus   {
+      outline-color: hsl(260, 100%,  50%) }
+  a:hover   { color: hsl(260, 100%,  50%) }
+  a:active  {
+    background: hsl(220,  70%,  35%);
+    color: #efefef;
+  }
+
+  .card .tags a { opacity: 50% }
+
+  .card > p { color: #606066 }
+
 }
 
