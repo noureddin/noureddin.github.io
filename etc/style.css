@@ -18,7 +18,7 @@ body {
   font-weight: normal;
 }
 
-#page {
+#p {
   margin: auto;  /* center */
   width: min(95vw, 35em);
   --width: min(95vw, 35em);
@@ -39,13 +39,13 @@ h2 { text-align: center }
 
 h3 { margin: 0; padding: 0 }
 
-#software { position: relative }
+#s { position: relative }
 
-#software, #writings { margin-top: 4em }
+#s, #w { margin-top: 4em }
 
-.software-description {
+.d {
   display: block;
-  --w: calc(var(--width)/1.5);  /* #page's width over 1.5 */
+  --w: calc(var(--width)/1.5);  /* #p's width over 1.5 */
   padding: 0.5em 1em;
   box-sizing: border-box;
   background: rgba(128, 128, 255, 0.15);
@@ -54,27 +54,27 @@ h3 { margin: 0; padding: 0 }
   text-align: start;
 }
 
-#software img { opacity: 65% }
-#software img:focus,
-#software img:hover { opacity: 100% }
+#s img { opacity: 65% }
+#s img:focus,
+#s img:hover { opacity: 100% }
 
-:not(a) + .software-description {
+:not(a) + .d {
   width: var(--w);
   margin: 0 auto;
   opacity: 65%;
 }
 
-:not(a) + .software-description:focus,
-:not(a) + .software-description:hover {
+:not(a) + .d:focus,
+:not(a) + .d:hover {
   opacity: 100%;
 }
 
-a + .software-description {
+a + .d {
   display: none;
 }
 
-a:focus + .software-description,
-a:hover + .software-description {
+a:focus + .d,
+a:hover + .d {
   display: block;
   position: absolute;
   left: calc(50% - var(--w)/2);
@@ -83,10 +83,10 @@ a:hover + .software-description {
 
 
 /* hide default description when showing another one */
-a:focus + .software-description + .software-description,
-a:hover + .software-description + .software-description,
-a:focus + .software-description ~ .software-description + .software-description,
-a:hover + .software-description ~ .software-description + .software-description {
+a:focus + .d + .d,
+a:hover + .d + .d,
+a:focus + .d ~ .d + .d,
+a:hover + .d ~ .d + .d {
   visibility: hidden;
 }
 
@@ -108,7 +108,7 @@ a:active {
 
 .card > p { color: #a0a0a6 }
 
-#writings { text-align: initial }
+#w { text-align: initial }
 
 .meta { display: flex; justify-content: space-between }
 
@@ -146,7 +146,7 @@ a:active {
     color: #112;
   }
 
-  .software-description {
+  .d {
     background: rgba(128, 128, 255, 0.25);
   }
 

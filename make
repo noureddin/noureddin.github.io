@@ -29,7 +29,7 @@ close $s;
 
 my $software = join "\n", map {
   qq[<a href="$_->{url}"><img src="$_->{img}" alt="$_->{alt}" width="72" height="72"></a>
-    <section class="software-description">
+    <section class="d">
       <div lang="ar" dir="rtl">$_->{ara}</div>
       <div lang="en" dir="ltr">$_->{eng}</div>
     </section>
@@ -37,7 +37,7 @@ my $software = join "\n", map {
 } grep { $_->{url} !~ /@{[ join '|', @IGNORE ]}/i } @software;
 
 $software .= q[
-  <section class="software-description">
+  <section class="d">
     <div lang="ar" dir="rtl"><p>
       قف على أي من الرموز التي بالأعلى لإظهار وصف تطبيقها،
       أو&nbsp;انقر عليها للانتقال إلى صفحته.
