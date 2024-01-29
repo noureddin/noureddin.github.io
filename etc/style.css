@@ -14,11 +14,7 @@ body {
   padding-bottom: 5em;
 }
 
-* {
-  font-weight: normal;
-}
-
-#p {
+#p {  /* page */
   margin: auto;  /* center */
   width: min(95vw, 35em);
   --width: min(95vw, 35em);
@@ -52,41 +48,66 @@ h3 { margin: 0; padding: 0 }
   border-radius: 1em;
   width: var(--w);
   text-align: start;
+  margin-top: -0.5em;
+  z-index: 1;  /* needed for hovering */
+}
+
+:not(img) + .d {
+  width: var(--w);
+  margin: -0.5em auto 5em;  /* repeat margin-top for brevity */
+  opacity: 65%;
+}
+
+#s img {
+  padding: 0 0.25em 1em;
+  margin-bottom: -0.5em;
 }
 
 #s img { opacity: 65% }
 #s img:focus,
 #s img:hover { opacity: 100% }
 
-:not(a) + .d {
-  width: var(--w);
-  margin: 0 auto;
-  opacity: 65%;
-}
+p + center { margin: -1em auto 0.25em auto }
+#s p { margin-top: 0.5em }
 
-:not(a) + .d:focus,
-:not(a) + .d:hover {
-  opacity: 100%;
-}
+/* show the tab when hovering or focusing the icon or the (shown) tab */
 
-a + .d {
-  display: none;
-}
-
-a:focus + .d,
-a:hover + .d {
-  display: block;
+img + .d {
+  visibility: hidden;
   position: absolute;
   left: calc(50% - var(--w)/2);
   right: calc(50% - var(--w)/2);
 }
 
+img:focus + .d,
+img:hover + .d,
+img + .d:focus,
+img + .d:hover {
+  visibility: visible;
+}
+
+img + .d:focus-within {
+  visibility: visible;
+}
+
+.d:focus,
+.d:hover {
+  opacity: 100%;
+}
 
 /* hide default description when showing another one */
-a:focus + .d + .d,
-a:hover + .d + .d,
-a:focus + .d ~ .d + .d,
-a:hover + .d ~ .d + .d {
+img:focus + .d + .d,
+img:hover + .d + .d,
+img:focus + .d ~ .d + .d,
+img:hover + .d ~ .d + .d,
+.d:focus + .d,
+.d:hover + .d,
+.d:focus ~ .d + .d,
+.d:hover ~ .d + .d {
+  visibility: hidden;
+}
+.d:focus-within + .d,
+.d:focus-within ~ .d + .d {
   visibility: hidden;
 }
 

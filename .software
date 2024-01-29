@@ -1,53 +1,36 @@
-/irsaa/
-etc/irsaa.svg
-إرساء — Irsaa
-<p><b>إرساء:</b> تطبيق لاختبار حفظك للقرآن الكريم على صفحات المصحف.</p>
-<p><b>Irsaa:</b> Memorization quiz app for the Quran, using images of the printed Mosħaf pages themselves.</p>
+/irsaa.svg إرساء | Irsaa
+تطبيق لاختبار حفظك للقرآن الكريم على صفحات المصحف.
+Memorization quiz app for the Quran, using images of the printed Mosħaf pages themselves.
 
-/recite/
-etc/recite.svg
-رسيت — Recite
-<p><b>رَسيت:</b> تطبيق لاختبار حفظك للقرآن الكريم، بلا كتابة أو بها، والذي يستخدمه تطبيق ذِكر الذِكر.</p>
-<p><b>Recite:</b> Memorization quiz app for the Quran, with or without typing, used by Zikr-uz-Zikr.</p>
+/recite.svg رَ'سيت | Recite
+تطبيق لاختبار حفظك للقرآن الكريم، بلا كتابة أو بها، والذي يستخدمه تطبيق ذِكر الذِكر.
+Memorization quiz app for the Quran, with or without typing, used by Zikr-uz-Zikr.
 
-/zz/
-etc/zz.svg
-ذِكر الذِكر — Zikr-uz-Zikr
-<p><b>ذِكرُ الذِكرِ:</b> تطبيق «تكرار متباعد» لتثبيت حفظك للقرآن الكريم.</p>
-<p><b>Zikr-uz-Zikr:</b> Spaced-repetition system (SRS) for solidifying your memorization of the Quran.</p>
+/zz.svg ذِكرُ' الذِكرِ | Zikr-uz-Zikr
+تطبيق «تكرار متباعد» لتثبيت حفظك للقرآن الكريم.
+Spaced-repetition system (SRS) for solidifying your memorization of the Quran.
 
-/fraed/
-etc/fraed.jpg
-فرائد — Fraëd
-<p><b>فرائد:</b> هل تستطيع معرفة الآيات التي وردت فيها كلمات لم ترد في غيرها؟</p>
-<p><b>Fraëd:</b> Can you determine an aaya from a unique word or words that aren’t in any other aaya?</p>
+/fraed.jpg فرائد | Fraëd
+أيمكنك معرفة الآيات الواردة فيها كلمات لم ترد في غيرها؟
+Can you determine an Aaya from a unique word or words that aren’t in any other Aaya?
 
-/ysmu/
-etc/ysmu.svg
-معجم يسمو للمصطلحات التقنية الحديثة
-<p><b>معجم يسمو للمصطلحات التقنية الحديثة:</b> معجم مجتمعي نتخير فيه أفضل مصطلح عربي فصيح سليم يجمع بين المعنى التقني والاستعمال الأصلي للكلمة العربية أو صحة اشتقاقها، ونشرح فيه أسباب اختيار هذا المصطلح والإعراض عن غيره.</p>
+/ysmu.svg معجم يسمو للمصطلحات التقنية الحديثة |
+معجم مجتمعي نتخير فيه أفضل مصطلح عربي فصيح سليم يجمع بين المعنى التقني والاستعمال الأصلي للكلمة العربية أو صحة اشتقاقها، ونشرح فيه أسباب اختيار هذا المصطلح والإعراض عن غيره.
 
 
-https://github.com/noureddin/ePread/
-etc/epread.svg
-إيپريد — ePread
-<p><b>إيـپريد:</b> قارئ ملفات ePub للحواسيب، مناسب لاستخدام لوحة المفاتيح أو شاشة اللمس.</p>
-<p><b>ePread:</b> Desktop ePub reader, suitable for keyboard use or touch screen.</p>
+epread.svg إيـ'پريد | ePread
+قارئ ملفات ePub للحواسيب، مناسب لاستخدام لوحة المفاتيح أو شاشة اللمس.
+Desktop ePub reader, suitable for keyboard use or touch screen.
 
-https://github.com/noureddin/cuteview/
-etc/cuteview.svg
-كيوت&zwnj;ڤيو — CuteView
-<p><b>كيوت&zwnj;ڤيو:</b> عارض صور وقارئ ملفات PDF للحواسيب، مناسب لاستخدام لوحة المفاتيح أو شاشة اللمس.</p>
-<p><b>CuteView:</b> Desktop Image viewer and PDF reader, suitable for keyboard use or touch screen.</p>
+cuteview.svg كيوت&zwnj;ڤيو | CuteView
+عارض صور وقارئ ملفات PDF للحواسيب، مناسب لاستخدام لوحة المفاتيح أو شاشة اللمس.
+Desktop Image viewer and PDF reader, suitable for keyboard use or touch screen.
 
-https://github.com/noureddin/lanbeeper/
-etc/lanbeeper.svg
-الأشار المحلي — LanBeeper
-<p><b>الأشّار المحلي:</b> فيما بعد</p>
-<p><b>LanBeeper:</b> todo</p>
+lanbeeper.svg الأشّ'ار المحلي | LanBeeper
+فيما بعد
+todo
 
-/kbt/
-etc/kbt.svg
-مدرب لوحات المفاتيح — Keyboard Trainer
-<p><b>مدرب لوحات المفاتيح:</b> تعلم الطباعة باللمس على أي تخطيط لوحة مفاتيح بالتمرين على كلمات حقيقة كاملة من أول درس.</p>
-<p><b>Keyboard Trainer:</b>  Learn touch-typing a keyboard layout by training on real, full words from the very first lesson.</p>
+/kbt.svg مدرب لوحات المفاتيح | Keyboard Trainer
+تعلم الطباعة باللمس على أي تخطيط لوحة مفاتيح بالتمرين على كلمات حقيقة كاملة من أول درس.
+Learn touch-typing a layout by training on real, full words from the very first lesson.
+
