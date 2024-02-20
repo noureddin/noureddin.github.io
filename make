@@ -85,8 +85,8 @@ sub make_urls { my ($src, $src_txt, $app, $app_txt) = @_;
 }
 
 my $software = join "", map {
-  my $urls_ar = make_urls $_->{src} => 'مستودع الكود', $_->{app} => 'تطبيق الويب';
-  my $urls_en = make_urls $_->{src} => 'Code Repo',    $_->{app} => 'Web App';
+  my $urls_ar = make_urls $_->{src} => 'المصدر البرمجي', $_->{app} => 'تطبيق الوب';
+  my $urls_en = make_urls $_->{src} => 'Source Code',    $_->{app} => 'Web App';
   my $desc_ar = sprintf '<p><b>%s:</b> %s</p>%s', $_->{ar} => $_->{ara} => $urls_ar;
   my $desc_en = $_->{en} && sprintf '<p><b>%s:</b> %s</p>%s', $_->{en} => $_->{eng} => $urls_en;
   qq[<img tabindex=0 src="$_->{img}" alt="$_->{alt}" width=72 height=72><!--
