@@ -17,8 +17,12 @@
 <style>{{style}}</style>
 </head>
 <body>
-<div id="p"><!-- page -->
-<img id="cover" src="etc/cover.svg" alt="Logo">
+<!-- image is 2029x985; at font-size=24px, width = 35em = 840px, and height = 408px -->
+<picture id="cover">
+<source type="image/svg+xml" srcset="etc/cover.svg" width="840" height="408">
+<source type="image/webp" srcset="etc/cover.webp" width="840" height="408">
+<img src="etc/cover.png" width="840" height="408" alt="Logo">
+</picture>
 <main>
 <header>
 <p>أنا نور الدين، مبرمج ومترجم تقني عربي.</p>
@@ -27,6 +31,5 @@
 <section id="s"><h2><a href="https://github.com/noureddin/">برمجيات | Software</a></h2>{{software}}</section>
 <section id="w"><h2><a href="/w/">كتابات وترجمات | Writings &amp; Translations</a></h2>{{writings}}</section>
 </main>
-</div>
 </body>
 </html>
