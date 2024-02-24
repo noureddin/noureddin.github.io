@@ -112,12 +112,12 @@ $software .= q[
 ### WRITINGS {{{1
 
 my $writings = sprintf "<ul>%s</ul>",
-  (join "", (slurp('../w/index.html') =~ m|<h2>.*?</h2>.*?<div class="time">.*?</div>|g))
+  (join "", (slurp('../ar/index.html') =~ m|<h2>.*?</h2>.*?<div class="time">.*?</div>|g))
   =~ s|<h2>|<li>|gr
   =~ s|(?<=</h2>).*?<div (class="time">)(.*?</span>).*?</div>|<span $1 &mdash; $2</span></li>|gr
   # remove all content, except a>h2 and the first part of div.time (updating date if any, otherwise publishing date)
-  # and add an em-dash before the time, and put into a list item; next: make urls relative to /w/, and remove the images.
-  =~ s| href="|$&/w/|gr
+  # and add an em-dash before the time, and put into a list item; next: make urls relative to /ar/, and remove the images.
+  =~ s| href="|$&/ar/|gr
   =~ s|<center><picture>.*?</picture></center>||gr
   ;
 
