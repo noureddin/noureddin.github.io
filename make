@@ -45,6 +45,7 @@ my @IGNORE = (
   '/epread',     # no logo yet; needs a lot of updates
   '/cuteview',   # needs a lot of updates
   '/irsaa',      # not published yet
+  '/ysmu',
 );
 
 my @software;
@@ -56,14 +57,18 @@ while (<$s>) {
      m@^(/?)      ([a-zA-Z0-9_-]+)[.]([a-zA-Z0-9]+) [ ]+([^|]*) [|] (.*)$@x;
     $ar =~ s/\s*$//;
     $en =~ s/^\s*//;
+    my $alt_ar = $ar =~ s/.'//gr;
+    my $web_ar = $ar =~ s/'//gr,
+    my $alt_en = $en ? ($en =~ s,//.*,,r) : '';
+    my $web_en = $en ? ($en =~ s,.*//,,r) : '';
     push @software, {
       src => "https://github.com/noureddin/$name/",  # repo
       app => $has_app ? "/$name/" : '',  # web app
       img => "etc/$name.$img_ext",
       # alt is $ar w/o any char followed by apostrophe, then &mdash + $en if found
-      alt => ($ar =~ s/.'//gr).($en ? ' &mdash; '.$en : ''),
-      ar  => $ar =~ s/'//gr,
-      en  => $en,
+      alt => $alt_ar.($alt_en ? ' &mdash; '.$alt_en : ''),
+      ar  => $web_ar,
+      en  => $web_en,
     }
   }
   elsif ($i % 4 == 1) { $software[$#software]{ara} = ichomp }
@@ -124,8 +129,7 @@ my $writings = sprintf "<ul>%s</ul>",
 
 ### STYLE {{{1
 
-my $style = scalar qx[ deno run --quiet --allow-read npm:clean-css-cli etc/style.css ];
-
+my $style = scalar qx[ deno run --quiet --allow-read --allow-env=HTTP_PROXY,http_proxy npm:clean-css-cli etc/style.css ];
 
 ### OUTPUT {{{1
 
