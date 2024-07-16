@@ -131,10 +131,16 @@ my $writings = sprintf "<ul>%s</ul>",
 
 my $style = scalar qx[ deno run --quiet --allow-read --allow-env=HTTP_PROXY,http_proxy npm:clean-css-cli etc/style.css ];
 
+### SCRIPT {{{1
+
+my $script = "const w=()=>document.body.style.setProperty('--ww',(window.innerWidth||document.documentElement.clientWidth)+'px');onresize=w;w()";
+
+
 ### OUTPUT {{{1
 
 print minify_html(slurp '.index.html')
   =~ s|\Q{{style}}\E|$style|gr
+  =~ s|\Q{{script}}\E|$script|gr
   =~ s|\Q{{software}}\E|$software|gr
   =~ s|\Q{{writings}}\E|$writings|gr
 

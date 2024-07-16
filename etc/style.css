@@ -9,17 +9,36 @@ html {
 }
 body {
   margin: auto;  /* center */
+  --ww: 99vw;  /* window width */
   width: 35em;
-  max-width: 95vw;
-  --width: min(95vw, 35em);
+  max-width: 90vw;
+  --width: min(35em, calc(var(--ww) * 0.95));
+  --w: var(--width);  /* cover */
   padding: 1em;
   padding-top: 0;
   overflow-x: hidden;
   padding-bottom: 5em;
 }
 
+@media (max-width: 800px) { body { --w: calc(1.1 * var(--width)) } }
+@media (max-width: 700px) { body { --w: calc(1.2 * var(--width)) } }
+@media (max-width: 600px) { body { --w: calc(1.3 * var(--width)) } }
+@media (max-width: 500px) { body { --w: calc(1.4 * var(--width)) } }
+@media (max-width: 400px) { body { --w: calc(1.6 * var(--width)) } }
+@media (max-width: 300px) { body { --w: calc(1.7 * var(--width)) } }
+@media (max-width: 200px) { body { --w: calc(1.9 * var(--width)) } }
+
 #cover * {
-  margin-bottom: -7em;
+  width: var(--w);
+  height: calc(var(--w) * 17 / 35);
+  position: absolute;
+  top: 0;
+  right: calc(var(--ww) / 2 - var(--w) / 2);
+  z-index: -1;  /* below main */
+}
+
+main {
+  margin-top: calc(var(--w) * 11 / 35);
 }
 
 a {
