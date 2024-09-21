@@ -55,11 +55,12 @@ h2 { text-align: center }
 
 #s { position: relative }
 
-#s, #w { margin-top: 4em }
+#s { margin-top: 4em }
+#w { margin-top: 6em }  /* including the diff in height between default .d & longest .d */
 
 .d {
   display: block;
-  --w: calc(var(--width)/1.5);  /* body's width over 1.5 */
+  --w: max(400px, calc(var(--width)/1.5));
   padding: 0.5em 1em;
   box-sizing: border-box;
   background: rgba(128, 128, 255, 0.15);
@@ -93,8 +94,54 @@ p + center { margin: -1em auto 0.25em auto }
 img + .d {
   visibility: hidden;
   position: absolute;
-  left: calc(50% - var(--w)/2);
+  /* left: calc(50% - var(--w)/2); */
   right: calc(50% - var(--w)/2);
+}
+
+@media (max-width: 499px) {  /* if too narrow to show all apps in one row */
+  html { font-size: 21px }
+  #s .c {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .d {
+    --w: calc(var(--width)/1.5);
+    position: absolute;
+    top: 0;
+    right: 100px;  /* 72px is icon width, hard-coded in /make */
+  }
+  img + .d {
+    right: 100px;  /* repeated from .d to override the wide screen rule */
+  }
+}
+
+@media (max-width: 359px) {
+  html { font-size: 18px }
+  #s img {
+    width: 64px
+  }
+  .d {
+    right: 72px;
+  }
+  img + .d {
+    right: 72px;
+  }
+  #s img {
+    padding: 0 0 1em;
+  }
+}
+
+@media (max-width: 269px) {
+  .d {
+    --w: calc(var(--width)/1.45);
+    right: 62px;
+    padding: 0.25em 0.5em;
+  }
+  img + .d {
+    right: 62px;
+  }
+  #s img { margin-right: -0.5em }
 }
 
 img:focus + .d,
