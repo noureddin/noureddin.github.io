@@ -133,8 +133,27 @@ my $style = scalar qx[ deno run --quiet --allow-read --allow-env=HTTP_PROXY,http
 
 ### SCRIPT {{{1
 
-my $script = "const w=()=>document.body.style.setProperty('--ww',(window.innerWidth||document.documentElement.clientWidth)+'px');onresize=w;w()";
+my $script = <<'END_OF_TEXT';
+const w=()=>document.body.style.setProperty('--ww',(window.innerWidth||document.documentElement.clientWidth)+'px')
+onresize=w
+w()
 
+if (!(location.search + location.hash).split(/[?&#]/).includes('nostats')) {
+  window.goatcounter = { path: location.href.replace(/[?#].*/,''), allow_frame: true }
+  // privacy-friendly statistics, no tracking of personal data, no need for GDPR consent; see goatcounter.com
+  const el = document.createElement('script')
+  el.dataset.goatcounter = 'https://noureddin.goatcounter.com/count'
+  el.async = true
+  el.src = 'count.min.js'
+  document.body.append(el)
+}
+
+END_OF_TEXT
+
+# count.min.js is generated from the official count.js file
+#  ( see https://www.goatcounter.com/help/countjs-host )
+# by this command:
+#   deno run --allow-read --allow-env=UGLIFY_BUG_REPORT npm:uglify-js --compress < count.js > count.min.js
 
 ### OUTPUT {{{1
 
