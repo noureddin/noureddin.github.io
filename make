@@ -44,7 +44,6 @@ my @IGNORE = (
   '/lanbeeper',  # no logo yet; too basic; quite dormant
   '/epread',     # no logo yet; needs a lot of updates
   '/cuteview',   # needs a lot of updates
-  '/irsaa',      # not published yet
   '/ysmu',
 );
 
